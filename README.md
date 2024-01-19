@@ -51,7 +51,7 @@ Relation : “register”
 Description : Un utilisateur peut déclarer zéro, un ou plusieurs session de chasse (1:N). Chaque déclaration est renseignée par exactement un utilisateur.
 Implémentation : La table hunting_session inclut une clé étrangère userId qui référence la clé primaire id dans la table User.
 
-# Représentation des entités dans un diagramme
+## Représentation des entités dans un diagramme
 ```mermaid
 erDiagram
 User ||--o{ Post : "writes"
@@ -105,13 +105,13 @@ PostCategory {
 
 
 
-# Règles Métier
+## Règles Métier
 Cette section présente les règles métier, qui sont les principes fondamentaux guidant le fonctionnement de notre application. Elles définissent comment les utilisateurs interagissent avec l’application et comment l’application réagit à ces interactions. Ces règles sont essentielles pour assurer que l’application fonctionne de manière logique et répond aux attentes des utilisateurs.
 Pour réaliser des diagrame de séquence représentant des regles metier vous pouvez utiliser les sequenceDiagram de mermaid.
 Création de compte utilisateur
 Base de DonnéesServeurInterface UtilisateurBase de DonnéesServeurInterface Utilisateuralt[L'email existe déjà][L'email est unique]UtilisateurChoix de créer un compteDemande de création de compte avec email et mot de passeVérifie si l'email existe déjàEmail déjà utiliséAffiche erreur d'email déjà utiliséAffiche erreur d'email déjà utiliséEmail unique confirméHache le mot de passeCrée le nouvel utilisateurConfirmation de création de l'utilisateurUtilisateur créé avec succèsAffiche succès de
 
-# création de compte Utilisateur
+## création de compte Utilisateur
 ```mermaid
 sequenceDiagram
     actor U as Utilisateur
@@ -136,7 +136,7 @@ sequenceDiagram
     end
 
 ```
-# Création d’une zone de battue
+## Création d’une zone de battue
 ```mermaid
 sequenceDiagram
     actor U as Utilisateur
