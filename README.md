@@ -56,7 +56,33 @@ Règles Métier
 Cette section présente les règles métier, qui sont les principes fondamentaux guidant le fonctionnement de notre application. Elles définissent comment les utilisateurs interagissent avec l’application et comment l’application réagit à ces interactions. Ces règles sont essentielles pour assurer que l’application fonctionne de manière logique et répond aux attentes des utilisateurs.
 Pour réaliser des diagrame de séquence représentant des regles metier vous pouvez utiliser les sequenceDiagram de mermaid.
 Création de compte utilisateur
-Base de DonnéesServeurInterface UtilisateurBase de DonnéesServeurInterface Utilisateuralt[L'email existe déjà][L'email est unique]UtilisateurChoix de créer un compteDemande de création de compte avec email et mot de passeVérifie si l'email existe déjàEmail déjà utiliséAffiche erreur d'email déjà utiliséAffiche erreur d'email déjà utiliséEmail unique confirméHache le mot de passeCrée le nouvel utilisateurConfirmation de création de l'utilisateurUtilisateur créé avec succèsAffiche succès de création de compteUtilisateur
+Base de DonnéesServeurInterface UtilisateurBase de DonnéesServeurInterface Utilisateuralt[L'email existe déjà][L'email est unique]UtilisateurChoix de créer un compteDemande de création de compte avec email et mot de passeVérifie si l'email existe déjàEmail déjà utiliséAffiche erreur d'email déjà utiliséAffiche erreur d'email déjà utiliséEmail unique confirméHache le mot de passeCrée le nouvel utilisateurConfirmation de création de l'utilisateurUtilisateur créé avec succèsAffiche succès de
+
+création de compteUtilisateur
+```mermaid
+sequenceDiagram
+    actor U as Utilisateur
+    participant UI as Interface Utilisateur
+    participant S as Serveur
+    participant DB as Base de Données
+
+    U->>UI: Choix de créer un compte
+    UI->>S: Demande de création de compte avec email et mot de passe
+    S->>DB: Vérifie si l'email existe déjà
+    alt L'email existe déjà
+        DB->>S: Email déjà utilisé
+        S->>UI: Affiche erreur d'email déjà utilisé
+        UI->>U: Affiche erreur d'email déjà utilisé
+    else L'email est unique
+        DB->>S: Email unique confirmé
+        S->>S: Hache le mot de passe
+        S->>DB: Crée le nouvel utilisateur
+        DB->>S: Confirmation de création de l'utilisateur
+        S->>UI: Utilisateur créé avec succès
+        UI->>U: Affiche succès de création de compte
+    end
+
+```
 Création d’une zone de battue
 ```mermaid
 sequenceDiagram
