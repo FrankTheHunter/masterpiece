@@ -1,25 +1,25 @@
-### Présentation de l’application 
+# Présentation de l’application 
 
 ## Création d’une application pour le projet chef d’oeuvre du titre professionnel CDA
-# 1. La Problématique
+### 1. La Problématique
 Problème : Risque d'accidents entre chasseurs et promeneurs en espaces naturels.
 Solution : Une application qui informe les promeneurs des zones de chasse actives pour éviter les accidents.
 L’aspect législatif pour les organisateurs de battues qui doivent déclarer de façon numérique la battue deux heures avant le début de celle-ci à leur fédération départementale.
-# 2. Situation Actuelle
+### 2. Situation Actuelle
 Existant : Manque d'outils mobiles dédiés à la prévention des accidents entre chasseurs et promeneurs.
 Statistiques : 90 accidents, dont 8 mortels, avaient été recensés en 2022
-# 3. Objectifs de l’Application
+### 3. Objectifs de l’Application
 Augmenter la sécurité en espaces naturels.
 Informer efficacement les promeneurs des zones de chasse.
 Faciliter la déclaration des battues par les chasseurs à leurs fédérations
-# 4. Description de l’Application
+### 4. Description de l’Application
 Application mobile permettant aux chasseurs de déclarer leurs zones de chasse et aux promeneurs de visualiser ces zones en temps réel.
-# 5. Systèmes d’Exploitations
+### 5. Systèmes d’Exploitations
 Choix : Disponible sur Android et iOS.
 Technologie : Développement hybride pour couvrir les deux plateformes.
-# 6. Modèle Économique de l’Application
+### 6. Modèle Économique de l’Application
 Les fédérations assurerons les coûts liés à la maintenance de l’application via les cotisations réglées par leurs adhérents.
- 8. Fonctionnalités
+### 7. Fonctionnalités
 1. Fonctionnalités
 Déclaration de battue par les chasseurs.
 Visualisation des zones de chasse pour les promeneurs.
