@@ -1,5 +1,4 @@
 # Présentation de l’application  
-/blob/main/photo_2024-01-19_16-32-46.png
 ## Création d’une application pour le projet chef d’oeuvre du titre professionnel CDA
 ### 1. La Problématique
 Problème : Risque d'accidents entre chasseurs et promeneurs en espaces naturels.
