@@ -50,8 +50,61 @@ User hunting_session (1:N)
 Relation : “register”
 Description : Un utilisateur peut déclarer zéro, un ou plusieurs session de chasse (1:N). Chaque déclaration est renseignée par exactement un utilisateur.
 Implémentation : La table hunting_session inclut une clé étrangère userId qui référence la clé primaire id dans la table User.
+
 Représentation des entités dans un diagramme
-Le diagramme est réaliser en utilisant les Entity Relationship Diagrams de mermaid
+```mermaid
+erDiagram
+User ||--o{ Post : "writes"
+User ||--o{ Comment : "comments"
+Post ||--o{ Comment : "has"
+Post ||--|{ PostCategory : "categorized in"
+Category ||--|{ PostCategory : "groups"
+
+User {
+    UUID id
+    string email
+    string username
+    string password
+    date createdAt
+}
+
+Post {
+    UUID id
+    string title
+    text content
+    date datePosted
+    UUID userId
+}
+
+Comment {
+    UUID id
+    text content
+    date dateCommented
+    UUID userId
+    UUID postId
+}
+
+Category {
+    UUID id
+    string name
+    string description
+}
+
+PostCategory {
+    UUID postId
+    UUID categoryId
+}
+```
+
+| Value (left) | Value (right) | Meaning                      |
+|--------------|---------------|------------------------------|
+| \|o          | o\|           | Zero or one                  |
+| \| \|        | \| \|         | Exactly one                  |
+| }o           | o\{           | Zero or more (no upper limit)|
+| }\|          | \|\{          | One or more (no upper limit) |
+
+
+
 Règles Métier
 Cette section présente les règles métier, qui sont les principes fondamentaux guidant le fonctionnement de notre application. Elles définissent comment les utilisateurs interagissent avec l’application et comment l’application réagit à ces interactions. Ces règles sont essentielles pour assurer que l’application fonctionne de manière logique et répond aux attentes des utilisateurs.
 Pour réaliser des diagrame de séquence représentant des regles metier vous pouvez utiliser les sequenceDiagram de mermaid.
