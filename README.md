@@ -1,11 +1,11 @@
 ### Présentation de l’application 
 
-Création d’une application pour le projet chef d’oeuvre du titre professionnel CDA
-1. La Problématique
+##Création d’une application pour le projet chef d’oeuvre du titre professionnel CDA
+"1. La Problématique
 Problème : Risque d'accidents entre chasseurs et promeneurs en espaces naturels.
 Solution : Une application qui informe les promeneurs des zones de chasse actives pour éviter les accidents.
 L’aspect législatif pour les organisateurs de battues qui doivent déclarer de façon numérique la battue deux heures avant le début de celle-ci à leur fédération départementale.
-2. Situation Actuelle
+#2. Situation Actuelle
 Existant : Manque d'outils mobiles dédiés à la prévention des accidents entre chasseurs et promeneurs.
 Statistiques : 90 accidents, dont 8 mortels, avaient été recensés en 2022
 3. Objectifs de l’Application
