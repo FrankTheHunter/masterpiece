@@ -1,6 +1,6 @@
 # Présentation de l’application 
 <picture>  
-<img alt="UUV Logo" src="[https://orange-opensource.github.io/uuv/img/uuv.png](https://github.com/FrankTheHunter/masterpiece/blob/main/photo_2024-01-19_16-32-46.jpg)">  
+<img alt="Logo" src="[https://github.com/FrankTheHunter/masterpiece/blob/main/photo_2024-01-19_16-32-46.jpg)">  
 </picture> 
 ## Création d’une application pour le projet chef d’oeuvre du titre professionnel CDA
 ### 1. La Problématique
