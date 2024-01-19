@@ -58,4 +58,21 @@ Pour réaliser des diagrame de séquence représentant des regles metier vous po
 Création de compte utilisateur
 Base de DonnéesServeurInterface UtilisateurBase de DonnéesServeurInterface Utilisateuralt[L'email existe déjà][L'email est unique]UtilisateurChoix de créer un compteDemande de création de compte avec email et mot de passeVérifie si l'email existe déjàEmail déjà utiliséAffiche erreur d'email déjà utiliséAffiche erreur d'email déjà utiliséEmail unique confirméHache le mot de passeCrée le nouvel utilisateurConfirmation de création de l'utilisateurUtilisateur créé avec succèsAffiche succès de création de compteUtilisateur
 Création d’une zone de battue
-Base de DonnéesApplicationBase de DonnéesApplicationUtilisateurCrée un article (brouillon)Sauvegarde le brouillonConfirme la sauvegardeAffiche l'article sauvegardéPublie l'articleVérifie la catégorie de l'articleCatégorie confirméeChange le statut en 'Publié'Confirme la publicationAffiche l'article publiéUtilisateur
+```mermaid
+sequenceDiagram
+    actor U as Utilisateur
+    participant A as Application
+    participant DB as Base de Données
+    
+    U->>A: Crée un article (brouillon)
+    A->>DB: Sauvegarde le brouillon
+    DB-->>A: Confirme la sauvegarde
+    A-->>U: Affiche l'article sauvegardé
+    
+    U->>A: Publie l'article
+    A->>DB: Vérifie la catégorie de l'article
+    DB-->>A: Catégorie confirmée
+    A->>DB: Change le statut en 'Publié'
+    DB-->>A: Confirme la publication
+    A-->>U: Affiche l'article publié
+```
