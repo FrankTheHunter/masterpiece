@@ -11,7 +11,7 @@ marp: true
 
 ### 1. La Problématique
 Problème : Risque d'accidents entre chasseurs et promeneurs en espaces naturels.
-Solution : Une application qui informe les promeneurs des zones de chasse actives pour éviter les accidents.
+-Solution : Une application qui informe les promeneurs des zones de chasse actives pour éviter les accidents.
 L’aspect législatif pour les organisateurs de battues qui doivent déclarer de façon numérique la battue deux heures avant le début de celle-ci à leur fédération départementale.
 
 ---
